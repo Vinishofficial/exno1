@@ -188,3 +188,7 @@ plt.show()
 
 # Result
 Thus, the given dataset was successfully cleaned by handling missing values, detecting and removing outliers using the IQR and Z-score methods, and the cleaned data was prepared for further analysis.
+
+# Summary
+
+Data cleaning is an important preprocessing step because dataset quality directly affects the accuracy and reliability of analysis and machine learning models. In this experiment, the Loan Data dataset containing 367 records was explored using info(), describe(), head(), and tail(). Missing values were handled using dropping, forward fill, backward fill, and mean imputation. For this financial dataset, mode imputation for categorical columns and median imputation for numerical columns is recommended. Outliers were detected using IQR and Z-score methods. Since the dataset is not normally distributed, the Modified Z-Score is more suitable because it uses the median and Median Absolute Deviation (MAD), making it less sensitive to extreme values. Values with a Modified Z-Score above 3.5 or below -3.5 can be treated as potential outliers. Overall, the experiment produces cleaner and more reliable data for visualization, statistical analysis, and machine learning.
